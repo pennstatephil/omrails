@@ -1,6 +1,4 @@
-<% if (user_signed_in?) %>
-	<h1>You're logged in, homie.</h1>
-<% else %>
+<% unless user_signed_in? %>
 	<div class="center hero-unit">
 	    <h1>Welcome! </h1>
 	    <p>to <%= link_to 'One Month Rails',  "http://onemonthrails.com" %>
